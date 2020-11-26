@@ -1,0 +1,44 @@
+isNull()
+step 1 :start procedure isNull()
+step 2 :IF frint == -1 and rear== -1 
+            return 1;
+step 3 :ELSE 
+            return 0;
+step 4 :End of IF
+step 5 :END procedure
+
+isFull()
+step 1 :start procedure isFull
+step 2 :IF rear == MAX-1
+            return 1
+step 3 :ELSE 
+            return 0
+step 4 :END OF IF
+step 5 :END OF procedure
+
+enQueue()
+step 1 :start procedure enQueue(value)
+step 2 :IF isFull()==0
+step 3 :  IF frint == -1
+step 4 :        frint<-frint+1
+step 5 :  END of IF
+step 6 :  rear<-rear+1;
+step 7 :  queue[rear]=value;
+step 8 :ELSE
+step 9 :    print "OVERFLOW" 
+step 10:End OF IF
+step 11:END of procedure 
+
+deQueue()
+step 1 :start procedure deQueue()
+step 2 :IF isNull()==0
+step 3 :  IF(rear=frint)
+                frint<- -1
+                rear <- -1
+step 4 :  ELSE
+                frint<-frint+1
+step 5 :  END OF IF
+step 6 :ELSE
+            print "Underflow"
+step 7 :END OF IF
+step 8 :END procedure

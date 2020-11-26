@@ -1,0 +1,46 @@
+Stack 
+
+isNull()
+step 1 : Start
+step 2 : Start Procedure isNull
+step 3 : IF top==-1
+            return 1
+step 4 : ELSE 
+            return 0
+step 5 : END OF IF
+step 6 : END OF Procedure
+step 7 : stop
+
+isFull()
+step 1 : Start
+step 2 : start Producere isFull
+step 4 : top==MAX_NUM-1
+            return 1
+step 5 : ELSE   
+            return 0
+step 6 : END OF IF
+step 7 : END Procedure
+step 9 : Stop
+
+PUSH (VALUE)
+Step 1: Start 
+Step 2: Start Procedure Push
+Step 3: IF isNULL()==1
+    	    Print  “Overflow”
+step 4: ELSE 
+         TOP <- TOP +1
+         STACK[TOP]=VALUE;
+step 5:END OF IF
+step 6:END Proedure
+Step 7:Stop
+
+PULL()
+step 1 : START
+step 2: Start Procedure Pull
+step 3:IF isFull()
+	print “Under flow”
+step 4: ELSE
+	  TOP<-TOP-1
+step 5: End Of IF
+step 6 :End Procedure
+Step 7:stop
