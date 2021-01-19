@@ -1,0 +1,32 @@
+step 1  :START procedure polyAddition
+step 2  :    i=0,j=0,k=0;
+step 3  :    WHILE i<numA and j<numB
+step 4  :        IF polyA[i].ex==polyB[j].ex
+step 5  :            sum[k].ex=polyA[i].ex;
+step 6  :            sum[k].co=polyA[i].co+polyB[j].co
+step 7  :            i=i+1
+step 8  :            j=j+1
+step 9  :        ELSE IF polyA[i].ex>polyB[j].ex
+step 10 :            sum[k].ex=polyA[i].ex
+step 11 :            sum[k].co=polyA[i].co  
+step 12 :            i=i+1
+step 13 :        ELSE         
+step 14 :            sum[k].ex=polyB[i].ex
+step 15 :            sum[k].co=polyB[i].co    
+step 16 :            j=j+1
+step 17 :        END OF IF
+step 18 :        k=k+1
+step 19 :   END OF LOOP
+step 20 :   WHILE i<numA
+step 21 :       sum[k].ex=polyA[i].ex
+step 22 :       sum[k].co=polyA[i].co    
+step 23 :       i=i+1
+step 24 :       k=k+1
+step 25 :   END OF LOOP
+step 26 :   WHILE j<numB
+step 27 :       sum[k].ex=polyB[j].ex
+step 28 :       sum[k].co=polyB[j].co
+step 29 :       j=j+1
+step 30 :       k=k+1
+step 31 :   END OF LOOP
+step 32 :END procedure polyAddition
