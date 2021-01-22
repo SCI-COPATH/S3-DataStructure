@@ -1,3 +1,4 @@
+//sci-copath
 #include <stdio.h>
 #define MAX_SIZE 5
 int queue[MAX_SIZE];
