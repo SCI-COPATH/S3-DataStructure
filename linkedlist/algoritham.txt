@@ -1,0 +1,26 @@
+step 1 :    START procedure insertionAtBeginning(**head,data)
+step 2 :        create a node newNode
+step 3 :        newNode->data=data
+step 4 :        newNode->link=NULL
+step 5 :        IF newNode==NULL
+step 6 :            *head=newNode;
+step 7 :        ELSE
+step 8 :            newNode->link=*head
+step 10:            *head=newNode;
+step 11:        END OF IF
+step 12:    STOP procedure insertionAtBeginning
+
+step 1 :    START procedure insertionAtEnd(**head,data)
+step 2 :        create tow node newNode and ptr
+step 3 :        newNode->data=data
+step 4 :        newNode->link=NULL
+step 5 :        IF newNode==NULL
+step 6 :            *head=newNode;
+step 7 :        ELSE
+step 8 :            ptr=*head 
+step 10:            WHILE ptr->link!=NULL
+step 11:                ptr=ptr->link
+step 12:            END OF WHILE
+step 13:            ptr->link=newNode
+step 14:        END OF IF
+step 15:    STOP procedure insertionAtEnd
