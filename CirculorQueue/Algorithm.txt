@@ -1,0 +1,41 @@
+STEP 1 :    [START PROCEDURE] isFull() 
+STEP 2 :        IF (rear+1)%MAX = frond
+STEP 3 :            return 1
+STEP 5 :        ELSE 
+STEP 6 :            return 0
+STEP 7 :        [END OF IF]
+STEP 8 :    [END OF PROCEDURE]
+
+STEP 1 :    [START PROEDURE ] isNull()
+STEP 2 :        IF frond=-1 AND rear =-1
+STEP 3 :            return 1
+STEP 4 :        ELSE 
+STEP 5 :            return 0
+STEP 6 :        [END OF IF]
+STEP 7 :    [END OF PROCEURE]
+
+STEP 1 :    [START PROCEDURE ] enQueue(value)
+STEP 2 :        IF isFull() = 0
+STEP 3 :            IF isNull() = 1
+STEP 4 :                frond=0
+STEP 5 :            [END OF IF]
+STEP 6 :            rare=(rare+1)%MAX
+STEP 7 :            queue[rare]=value
+STEP 8 :        ELSE
+STEP 9 :            print "Queue is Overflow" 
+STEP 10:        [END OF IF]
+STEP 11:    [END OF PROCEDURE]
+
+STEP 1 :    [START PROCEDURE] deQueue
+STEP 2 :        IF isNull()=0
+STEP 3 :            print "Reamove queue[frond] element"
+STEP 4 :            IF frond == rare
+STEP 5 :                rear=-1
+STEP 6 :                frond=-1
+STEP 7 :            ELSE
+STEP 8 :                frond=(frond+1)%MAX
+STEP 9 :            [END OF IF]
+STEP 10:        ELSE
+STEP 11:            print "Queue is Underflow"
+STEP 12:        [END OF IF]
+STEP 13:    [END OF PROCEDURE]
